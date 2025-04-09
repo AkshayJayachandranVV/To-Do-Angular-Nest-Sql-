@@ -1,0 +1,87 @@
+
+
+.container {
+    width: 100%;
+    height : 100vh;
+    background-color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 9vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    z-index: 1000;
+  }
+
+.header {
+    color: white;
+    
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-body {
+    height: 500px;
+    width: 400px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+label {
+    font-style: italic;
+    font-weight: 300;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+}
+
+.form-group {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.head-login{
+    color: darkgreen;
+    font-size: 30px;
+}
+
+
+button {
+    background-color: green;
+    color: white;
+    height: 30px;
+    width:100px
+}
+
+
+.error {
+   color: red;    
+}
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="navbar">
+    <h1 class="header">To-Do List</h1>
+  </div>
+
+  <div class="body">
+    <div class="todo-form">
+      <input type="text" placeholder="Enter a task" [(ngModel)]="newTask" />
+      <button class="add" (click)="addTask()"  >Add</button>
+    </div>
+
+    <ul class="todo-list">
+      <li  *ngFor="let task of tasks; let i = index" >
+        <input
+          type="text"
+          [(ngModel)]="task.task"
+        />
+        <button class="update" (click)="updateTask(task.id,task.task)" >Update</button>
+        <button class="delete" (click)="deleteTask(task.id)" >Delete</button>
+      </li>
+    </ul>
+  </div>
+</div>
